@@ -19,9 +19,9 @@ $docker run -d demo
 $curl localhost:3000
 
 You have another two ways to connect to the server in docker. (Both can be used in your local machine or a virtual machine)
-One way: 
+One way(You can get the docker image by 'docker pull quay.io/yisongshen0/docker-rails'): 
 First run the container
-$docker run -d demo or $docker run -it demo
+$docker run -d demo or $docker run -it demo (Or you can directly get the docker image by 'docker pull quay.io/yisongshen0/docker-rails')
 Then check the process
 $docker ps
 Identify the container IP
@@ -30,8 +30,8 @@ You can find your container ID, then
 $curl yourcontainerID:3000
 
 Another way:
-First run the container
-$docker run -itP demo
+First create the container
+$docker run -itP demo (Or you can directly get the docker image by 'docker pull quay.io/yisongshen0/docker-rails2')
 Then check the process
 $docker ps
 This time you may see the the ports is "0.0.0.0:port(this is a number)->3000/tcp"
